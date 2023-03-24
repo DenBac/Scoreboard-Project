@@ -1,0 +1,48 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="team">
+                <h3 id="HomeTitle">HOME</h3>
+                <div class="box-score" id="home-box">
+                    <h1 class="scoreboxHome" id="home-Points">0</h1>
+                </div>
+              <div class="point-counter" id="homepointer">
+                   <button id="plus-One-Home" onclick="plusOneHome()">+1</button>
+                   <button id="plus-Two-Home" onclick="plusTwoHome()">+2</button>
+                   <button id="plus-Three-Home" onclick="plusThreeHome()">+3</button>
+              </div>
+                <div>
+                    <button class="reset-point-btn" id="reset-home-btn" onclick="homeReset()">RESET</button>
+                </div>
+            </div>
+             <div class="Timer-H">
+                 <h2>TIME REMAINING</h2>
+                <h1 id="Timer">00:00</h1>
+                 <div class="Timer-Btn">
+                    <button id="start-btn" onclick="startTimer()">START</button>
+                    <button id="pause-btn" onclick="pauseTimer()">PAUSE</button>
+                </div>
+                <div class="Timer-Btn">
+                    <button id="NewGame-btn" onclick="newGame()">NEW GAME</button>
+                    <button id="ResetTime-btn" onclick="resetTimer()">RESET</button>
+                </div>
+             </div>
+            <div class="team">
+                <h3 id="GuestTitle">GUEST</h3>
+                <div class="box-score" id="guest-box">
+                    <h1 class="scoreboxGuest" id="guest-Points">0</h1>
+                </div>
+                <div class="point-counter" id="guestpointer">
+                    <button id="plus-One-Guest" onclick="plusOneGuest()">+1</button>
+                    <button id="plus-Two-Guest" onclick="plusTwoGuest()">+2</button>
+                    <button id="plus-Three-Guest" onclick="plusThreeGuest()">+3</button>
+                </div>
+                <button class="reset-point-btn" id="reset-guess-btn" onclick="guestReset()">RESET</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
